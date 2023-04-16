@@ -6,5 +6,4 @@ Feature: Uygulama izni verilerek yeni sekmelerin acilmasi
     And Pop up kontrol edilir.
     Then Ok butonuna tıklanır.
 
-    Scenario:
 
