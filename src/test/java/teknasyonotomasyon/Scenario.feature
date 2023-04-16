@@ -5,5 +5,3 @@ Feature: Uygulama izni verilerek yeni sekmelerin acilmasi
     And Devam butonuna tıklanır.
     And Pop up kontrol edilir.
     Then Ok butonuna tıklanır.
-
-
