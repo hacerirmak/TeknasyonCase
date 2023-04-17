@@ -23,17 +23,20 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>4.8.3</version>
     </dependency>
+
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.7.1</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>com.xamarin.testcloud</groupId>
       <artifactId>appium</artifactId>
@@ -58,6 +61,18 @@
       <version>7.11.0</version>
       <scope>test</scope>
     </dependency>
+
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>7.5.1</version>
+        </dependency>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>RELEASE</version>
+          <scope>test</scope>
+      </dependency>
 
   </dependencies>
 </project>
