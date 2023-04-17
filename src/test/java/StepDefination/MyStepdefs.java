@@ -8,8 +8,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import page_object_model.AbstarctClass;
+import page_object_model.access_page;
+
 import java.net.URL;
 
 
@@ -36,13 +41,15 @@ import java.net.URL;
 
         @Given("Haedar alanindaki baslik kontrol edilir.")
         public void haedar_alanindaki_baslik_kontrol_edilir() {
-            // Write code here that turns the phrase above into concrete actions
+
+
 
         }
-        @Given("Devam butonuna tıklanır.")
+        @And("Devam butonuna tıklanır.")
         public void devam_butonuna_tıklanır() {
-            // Write code here that turns the phrase above into concrete actions
-
+            By continueButton = By.id("com.android.permissioncontroller:id/continue_button");
+            WebElement continueSelect = driver.findElement(continueButton);
+            continueSelect.click();
         }
         @Given("Pop up kontrol edilir.")
         public void pop_up_kontrol_edilir() {
