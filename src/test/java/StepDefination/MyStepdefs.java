@@ -1,5 +1,6 @@
 package StepDefination;
 
+import com.comcast.magicwand.spells.appium.AppiumDriverBuilder;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.Before;
@@ -9,12 +10,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
     @RunWith(Cucumber.class)
     class MyStepdefs {
         
         public AndroidDriver<MobileElement> driver;
+
     
     @Before
     public void setUp() throws  Exception {
