@@ -1,8 +1,6 @@
 package page_object_model;
-
-
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -12,7 +10,7 @@ import java.time.Duration;
 
 public class AbstarctClass {
 
-    public AndroidDriver<MobileElement> driver;
+    public AndroidDriver driver;
 
 
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));

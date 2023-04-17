@@ -1,7 +1,6 @@
 package StepDefination;
 
 import com.comcast.magicwand.spells.appium.AppiumDriverBuilder;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -11,12 +10,12 @@ import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.net.URL;
-    @RunWith(Cucumber.class)
-    class MyStepdefs {
+
+
+  public class MyStepdefs {
         
-        public AndroidDriver<MobileElement> driver;
+        public AndroidDriver driver;
 
     
     @Before
@@ -30,28 +29,30 @@ import java.net.URL;
         capabilities.setCapability("appActivity","com.hmh.api.ApiDemos");
         capabilities.setCapability("skipUnlock","true");
         capabilities.setCapability("noReset","false");
-        driver = new AndroidDriver<MobileElement>(new URL("htpp://127.0.0.1:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
 
     }
 
-    @Given("Haedar alanındaki başlık kontrol edilir.")
-    public void haedarAlanındakiBaşlıkKontrolEdilir() {
-        System.out.println("Header alanındaki baslik dogrudur");
-    }
+        @Given("Haedar alanindaki baslik kontrol edilir.")
+        public void haedar_alanindaki_baslik_kontrol_edilir() {
+            // Write code here that turns the phrase above into concrete actions
 
-    @And("Devam butonuna tıklanır.")
-    public void devamButonunaTıklanır() {
-        System.out.println("Devam butonuna tıklanır");
-    }
+        }
+        @Given("Devam butonuna tıklanır.")
+        public void devam_butonuna_tıklanır() {
+            // Write code here that turns the phrase above into concrete actions
 
-    @And("Pop up kontrol edilir.")
-    public void popUpKontrolEdilir() {
-        System.out.println("Ekrana pop up ciktigi gorulur");
-    }
+        }
+        @Given("Pop up kontrol edilir.")
+        public void pop_up_kontrol_edilir() {
+            // Write code here that turns the phrase above into concrete actions
 
-    @Then("Ok butonuna tıklanır.")
-    public void okButonunaTıklanır() {
-        System.out.println("Ok butonuna basarili tiklanir.");
+        }
+        @Then("Ok butonuna tıklanır.")
+        public void ok_butonuna_tıklanır() {
+            // Write code here that turns the phrase above into concrete actions
+
+        }
+
     }
-}
