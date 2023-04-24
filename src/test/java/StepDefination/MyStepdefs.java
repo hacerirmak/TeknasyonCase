@@ -1,24 +1,21 @@
 package StepDefination;
 
-import com.comcast.magicwand.spells.appium.AppiumDriverBuilder;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.junit.Cucumber;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import page_object_model.AbstarctClass;
-import page_object_model.access_page;
 
 import java.net.URL;
+import java.time.Duration;
 
 
-  public class MyStepdefs {
+public class MyStepdefs {
         
         public AndroidDriver driver;
 
@@ -53,13 +50,16 @@ import java.net.URL;
         }
         @Given("Pop up kontrol edilir.")
         public void pop_up_kontrol_edilir() {
-            // Write code here that turns the phrase above into concrete actions
+
 
         }
-        @Then("Ok butonuna tıklanır.")
-        public void ok_butonuna_tıklanır() {
-            // Write code here that turns the phrase above into concrete actions
-
+        @Then("Ok butonuna tiklanir.")
+        public void ok_butonuna_tiklanir() {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(5000));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("android:id/button1")));
+            By okButton=By.id("android:id/button1");
+            WebElement okSelect = driver.findElement(okButton);
+            okSelect.click();
         }
 
     }
