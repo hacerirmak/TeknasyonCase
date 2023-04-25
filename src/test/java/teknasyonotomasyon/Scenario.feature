@@ -1,7 +1,7 @@
 Feature: Uygulama izni verilerek yeni sekmelerin acilmasi
 
   Scenario: 1- Uygulama izni verilmesi
-    * Haedar alanindaki baslik kontrol edilir.
+    * Header alanindaki baslik kontrol edilir.
     * Devam butonuna tıklanır.
     * Ok butonuna tiklanir.
 	* App butonuna tiklanir.
@@ -13,7 +13,7 @@ Feature: Uygulama izni verilerek yeni sekmelerin acilmasi
 	* Sekmelerin dogrulugu kontrol edilir.
 	* Son eklenen tab silinir.
 	* Dogru sekmenin silindigi kontrol edilir.
-	* Romove all tabs tiklanir.
+	* Remove all tabs tiklanir.
 	* Tüm tablarin silindiği kontrol edilir.
 
 
